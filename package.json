@@ -1,0 +1,29 @@
+{
+  "name": "boilerplate_webapp",
+  "version": "0.0.0",
+  "description": "web-application project template",
+  "author": "imafee",
+  "license": "MIT",
+  "homepage": "https://github.com/imafee/boilerplate_webapp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:imafee/boilerplate_webapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imafee/boilerplate_webapp/issues",
+    "email": "imafee@outlook.com"
+  },
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "scripts": {
+    "start": "node src/index.js",
+    "prettier:check": "prettier --cache --check .",
+    "prettier:write": "prettier --cache --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  }
+}

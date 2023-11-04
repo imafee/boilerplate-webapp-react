@@ -1,3 +1,11 @@
+# local file
+.DS_Store
+package-lock.json
+
+# local folder/files
+build
+dist
+
 # Logs
 logs
 *.log
