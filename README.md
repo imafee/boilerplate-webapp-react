@@ -8,9 +8,12 @@ A web front-end application project boilerplate.
 - [x] repository management: git,monorepo
 - [x] editor: vscode
 - [x] formatter: editorconfig,prettier
-- [ ] bundler: webpack
-- [ ] dev-server: webpack-dev-server
-- [ ] coding core stack
+- [x] bundler: webpack
+- [x] dev-tool:
+  - [x] webpack-dev-server
+  - [ ] ~~webpack watch~~
+  - [ ] ~~webpack-dev-middleware~~
+- [ ] coding core tech-stack
   - framework: react
   - router: react-router-dom
   - state management: redux

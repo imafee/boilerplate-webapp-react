@@ -14,16 +14,38 @@
     "email": "imafee@outlook.com"
   },
   "private": true,
+  "sideEffects": [
+    "*.css"
+  ],
   "type": "module",
   "workspaces": [
     "./packages/*"
   ],
   "scripts": {
-    "start": "node src/index.js",
+    "build:dev": "webpack --env mode='development' --progress",
+    "build:prod": "webpack --env mode='production'",
     "prettier:check": "prettier --cache --check .",
-    "prettier:write": "prettier --cache --write ."
+    "prettier:write": "prettier --cache --write .",
+    "serve": "webpack serve --env mode='development'"
   },
   "devDependencies": {
-    "prettier": "^3.0.3"
+    "@webpack-cli/generators": "^3.0.7",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "csv-loader": "^3.0.5",
+    "html-webpack-plugin": "^5.5.3",
+    "json5": "^2.2.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "prettier": "^3.0.3",
+    "style-loader": "^3.3.3",
+    "toml": "^3.0.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "xml-loader": "^1.2.1",
+    "yamljs": "^0.3.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }

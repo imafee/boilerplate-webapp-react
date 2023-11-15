@@ -9,7 +9,7 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "files.associations": {
-    "*.json5": "jsonc"
+    "*.json": "jsonc"
   },
   /* ---工作台&窗口--- */
   /* ---功能--- */
