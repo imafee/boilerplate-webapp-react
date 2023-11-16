@@ -1,9 +1,10 @@
 import './index.css';
-import { log } from '@util/index.js'; // gen initial chunk
-import '@demo/loadLocalPackage.js';
+// import { log } from '@util/index.js'; // gen initial chunk
+// import '@demo/loadLocalPackage.js';
 // import '@demo/loadAssets.js';
 // import { comp as click2print } from '@demo/click2print.js';
 // import { lazyload } from '@demo/dynamicComponent.js';
+import { presentTransform, pluginTransform } from '@demo/babeljs.js';
 
 // demo:local package to use
 
@@ -16,5 +17,9 @@ import '@demo/loadLocalPackage.js';
 
 // demo:click2print,交互事件
 // document.body.appendChild(click2print());
+
+// demo: babeljs transform
+presentTransform();
+pluginTransform();
 
 console.log('Index module loaded!!');

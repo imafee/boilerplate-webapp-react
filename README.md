@@ -13,19 +13,27 @@ A web front-end application project boilerplate.
   - [x] webpack-dev-server
   - [ ] ~~webpack watch~~
   - [ ] ~~webpack-dev-middleware~~
+- [-] compiler:
+  - [x] babeljs
+  - [w] postcss
+  - [w] typescript
 - [ ] coding core tech-stack
-  - framework: react
-  - router: react-router-dom
-  - state management: redux
-  - css reset
-- [ ] linter: eslint,stylelint
-- [ ] compiler: babeljs,postcss
+  - [] framework: react
+  - [] router: react-router-dom
+  - [] state management: redux
+  - [] css reset
+- [ ] linter:
+  - [] eslint, only in editor and git hook
+  - [] stylelint, only in editor and git hook
 - [ ] tester: jest
-- [ ] collaborate：commitizen,semantic-release,issue,pr
+- [ ] collaborate：
+  - [] git: commitizen
+  - [] semantic-release
+  - [] github issue,pr
 - [ ] benchmark
 - [ ] CI/CD: github actions
-- [ ] Utils:
-  - Axios: packaging，Senseless token refresh
+- [ ] utils:
+  - Axios: packaging
   - Lodash
 - [ ] UI-library: shadcn/ui, antd
 - [ ] Icon-library: iconfont

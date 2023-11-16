@@ -10,13 +10,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const envFile = require('./env.json');
 
 module.exports = (env, args) => {
+  process.env.NODE_ENV = process.env.BROWSERSLIST_ENV = env.mode;
   const ASSET_PATH = envFile[env.mode]['ASSET_PATH'];
   const isProduction = env.mode === 'production';
   const stylesHandler = isProduction
     ? MiniCssExtractPlugin.loader
     : 'style-loader';
-  console.log('isProduction:', isProduction);
-  console.log('stylesHandler:', stylesHandler);
 
   const config = {
     entry: {
@@ -78,11 +77,11 @@ module.exports = (env, args) => {
 
   // loader chain从右往左执行的，默认支持的文件类型：json、cjs、esm
   config.module.rules = [
-    // {
-    //   test: /\.(js|jsx)$/i,
-    //   include: path.resolve(__dirname, 'src'),
-    //   loader: 'babel-loader',
-    // },
+    {
+      test: /\.(mjs|js|jsx)$/i,
+      include: path.resolve(__dirname, 'src'),
+      loader: 'babel-loader',
+    },
     {
       test: /\.css$/i,
       exclude: /node_modules/i,
