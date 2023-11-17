@@ -4,7 +4,9 @@ import './index.css';
 // import '@demo/loadAssets.js';
 // import { comp as click2print } from '@demo/click2print.js';
 // import { lazyload } from '@demo/dynamicComponent.js';
-import { presentTransform, pluginTransform } from '@demo/babeljs.js';
+// import { presentTransform, pluginTransform } from '@demo/babeljs.js';
+// import { comp } from './demo/cssmodule.js';
+import { comp } from './demo/cssmodule.js';
 
 // demo:local package to use
 
@@ -19,7 +21,11 @@ import { presentTransform, pluginTransform } from '@demo/babeljs.js';
 // document.body.appendChild(click2print());
 
 // demo: babeljs transform
-presentTransform();
-pluginTransform();
+// presentTransform();
+// pluginTransform();
+// document.body.appendChild(comp());
+
+// demo: cssmodule
+comp();
 
 console.log('Index module loaded!!');

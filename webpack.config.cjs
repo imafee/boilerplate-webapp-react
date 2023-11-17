@@ -87,8 +87,16 @@ module.exports = (env, args) => {
       exclude: /node_modules/i,
       use: [
         stylesHandler,
-        'css-loader',
-        // 'postcss-loader'
+        {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 1,
+            modules: {
+              localIdentName: '[local]_[hash:base64:5]',
+            },
+          },
+        },
+        'postcss-loader',
       ],
     },
     {

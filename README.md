@@ -15,7 +15,7 @@ A web front-end application project boilerplate.
   - [ ] ~~webpack-dev-middleware~~
 - [-] compiler:
   - [x] babeljs
-  - [w] postcss
+  - [x] postcss
   - [w] typescript
 - [ ] coding core tech-stack
   - [] framework: react
