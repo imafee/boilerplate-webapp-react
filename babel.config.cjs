@@ -10,6 +10,7 @@ module.exports = function (api) {
         corejs: '3.33.2',
       },
     ],
+    '@babel/preset-react',
   ];
   // Plugin ordering is first to last.
   const plugins = [

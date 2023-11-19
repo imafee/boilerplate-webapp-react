@@ -100,6 +100,13 @@ module.exports = (env, args) => {
       ],
     },
     {
+      test: path.resolve(
+        __dirname,
+        './node_modules/modern-normalize/modern-normalize.css',
+      ),
+      use: [stylesHandler, 'css-loader'],
+    },
+    {
       test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
       exclude: /node_modules/i,
       type: 'asset',

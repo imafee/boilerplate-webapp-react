@@ -17,9 +17,9 @@ A web front-end application project boilerplate.
   - [x] babeljs
   - [x] postcss
   - [w] typescript
-- [ ] coding core tech-stack
-  - [] framework: react
-  - [] router: react-router-dom
+- [-] coding core tech-stack
+  - [x] framework: react
+  - [x] router: react-router-dom
   - [] state management: redux
   - [] css reset
 - [ ] linter:

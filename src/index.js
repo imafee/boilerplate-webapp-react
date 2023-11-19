@@ -1,31 +1,35 @@
+import 'modern-normalize';
 import './index.css';
-// import { log } from '@util/index.js'; // gen initial chunk
-// import '@demo/loadLocalPackage.js';
-// import '@demo/loadAssets.js';
-// import { comp as click2print } from '@demo/click2print.js';
-// import { lazyload } from '@demo/dynamicComponent.js';
-// import { presentTransform, pluginTransform } from '@demo/babeljs.js';
-// import { comp } from './demo/cssmodule.js';
-import { comp } from './demo/cssmodule.js';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from 'react-router-dom';
 
-// demo:local package to use
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: (
+      <div>
+        <h1>Hello World</h1>
+        <Link to="about">About Us</Link>
+      </div>
+    ),
+  },
+  {
+    path: 'about',
+    element: (
+      <div>
+        About
+        <Link to="/">Home</Link>
+      </div>
+    ),
+  },
+]);
 
-// demo:3th package to use
-// import {join} from 'lodash';
-// log(join(['Index', 'module', 'loaded!!'], ' '));
-
-// demo:dynamicComponent,懒加载
-// lazyload();
-
-// demo:click2print,交互事件
-// document.body.appendChild(click2print());
-
-// demo: babeljs transform
-// presentTransform();
-// pluginTransform();
-// document.body.appendChild(comp());
-
-// demo: cssmodule
-comp();
-
-console.log('Index module loaded!!');
+createRoot(document.getElementById('app')).render(
+  <RouterProvider router={router} />,
+);
