@@ -21,16 +21,15 @@ A web front-end application project boilerplate.
   - [x] framework: react
   - [x] router: react-router-dom
   - [] state management: redux
-  - [] css reset
-- [ ] linter:
-  - [] eslint, only in editor and git hook
-  - [] stylelint, only in editor and git hook
+  - [x] css reset
+- [x] linter:
+  - [x] eslint, only in editor and git hook
+  - [x] stylelint, only in editor and git hook
 - [ ] tester: jest
 - [ ] collaborate：
   - [] git: commitizen
   - [] semantic-release
   - [] github issue,pr
-- [ ] benchmark
 - [ ] CI/CD: github actions
 - [ ] utils:
   - Axios: packaging
@@ -38,5 +37,6 @@ A web front-end application project boilerplate.
 - [ ] UI-library: shadcn/ui, antd
 - [ ] Icon-library: iconfont
 - [ ] Accessibility: A11y,ARIA,Insights,Lighthouse.符合Web Content Accessibility Guidelines (WCAG)标准
+- [ ] benchmark
 
 ## Specification
