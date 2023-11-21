@@ -1,16 +1,16 @@
 {
-  "name": "boilerplate_webapp",
+  "name": "boilerplate.webapp.react",
   "version": "0.0.0",
-  "description": "web-application project template",
+  "description": "react web-application template",
   "author": "imafee",
   "license": "MIT",
-  "homepage": "https://github.com/imafee/boilerplate_webapp#readme",
+  "homepage": "https://github.com/imafee/boilerplate.webapp.react#readme",
   "repository": {
     "type": "git",
-    "url": "git@github.com:imafee/boilerplate_webapp.git"
+    "url": "git@github.com:imafee/boilerplate.webapp.react.git"
   },
   "bugs": {
-    "url": "https://github.com/imafee/boilerplate_webapp/issues",
+    "url": "https://github.com/imafee/boilerplate.webapp.react/issues",
     "email": "imafee@outlook.com"
   },
   "private": true,
@@ -31,7 +31,8 @@
     "stylelinet:check": "stylelint **/*.{css}",
     "stylelinet:write": "stylelint --fix **/*.{css}",
     "serve": "webpack serve --env mode='development'",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.23.0",
@@ -53,6 +54,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
     "html-webpack-plugin": "^5.5.3",
+    "jest": "^29.7.0",
     "json5": "^2.2.3",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss-loader": "^7.3.3",

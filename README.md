@@ -1,42 +1,49 @@
-# Boilerplate_webapp
+# Boilerplate.webapp.react
 
-A web front-end application project boilerplate.
+A project boilerplate for a react drived front-end application.
 
 ## Project content
 
-- [x] modular: node,npm,esm
-- [x] repository management: git,monorepo
-- [x] editor: vscode
-- [x] formatter: editorconfig,prettier
-- [x] bundler: webpack
-- [x] dev-tool:
+- [x] Modular: nodejs,esmodule
+- [x] Repository management: npm,git,monorepo
+- [x] Editor: vscode
+- [x] Formatter: editorConfig,prettier.Only for editor.
+- [x] Bundler: webpack
+- [x] Dev-tool:
   - [x] webpack-dev-server
-  - [ ] ~~webpack watch~~
-  - [ ] ~~webpack-dev-middleware~~
-- [-] compiler:
+  - [ ] mocker
+  - [ ] webpack-dev-middleware
+- [ ] Compiler:
   - [x] babeljs
   - [x] postcss
-  - [w] typescript
-- [-] coding core tech-stack
+  - [ ] typescript
+- [ ] Coding technology stack
   - [x] framework: react
   - [x] router: react-router-dom
-  - [] state management: redux
-  - [x] css reset
-- [x] linter:
-  - [x] eslint, only in editor and git hook
-  - [x] stylelint, only in editor and git hook
-- [ ] tester: jest
-- [ ] collaborate：
-  - [] git: commitizen
-  - [] semantic-release
-  - [] github issue,pr
-- [ ] CI/CD: github actions
-- [ ] utils:
-  - Axios: packaging
-  - Lodash
-- [ ] UI-library: shadcn/ui, antd
-- [ ] Icon-library: iconfont
-- [ ] Accessibility: A11y,ARIA,Insights,Lighthouse.符合Web Content Accessibility Guidelines (WCAG)标准
-- [ ] benchmark
+  - [ ] state management: redux
+  - [x] css reset style
+- [x] Linter:
+  - [x] eslint. only for editor and git hook
+  - [x] stylelint. only for editor and git hook
+- [ ] Tester:
+  - [x] unit test: jest
+  - [ ] ui test: @testing-library family
+  - [ ] Integration test: jest-puppeteer
+  - [ ] e2e test: @testing-library family
+- [ ] Collaborate：
+  - [ ] git-commitizen
+  - [ ] semantic-release
+  - [ ] github issue and pr
+- [ ] Utils:
+  - [ ] Axios: packaging
+  - [ ] Lodash
+
+Waiting:
+
+- CI/CD: github actions
+- UI-library: shadcn/ui, antd
+- Icon-library: iconfont
+- Accessibility: A11y,ARIA,Insights,Lighthouse.符合Web Content Accessibility Guidelines (WCAG)标准
+- Performance Benchmark
 
 ## Specification
